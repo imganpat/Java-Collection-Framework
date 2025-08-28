@@ -16,8 +16,22 @@ public class MergeTwoArrayLists {
         ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(30, 40, 50, 60));
         ArrayList<Integer> mergedList = new ArrayList<>();
 
-        mergedList.addAll(list1);
-        mergedList.addAll(list2);
+        // merging entire list with dublicates
+        // mergedList.addAll(list1);
+        // mergedList.addAll(list2);
+        // display(mergedList);
+
+        // merging without dublicates
+        for (int value : list1) {
+            if (!mergedList.contains(value)) {
+                mergedList.add(value);
+            }
+        }
+        for (int value : list2) {
+            if (!mergedList.contains(value)) {
+                mergedList.add(value);
+            }
+        }
 
         display(mergedList);
 

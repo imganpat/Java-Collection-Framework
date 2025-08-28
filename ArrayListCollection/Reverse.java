@@ -12,6 +12,7 @@ Reverse an ArrayList
 package ArrayListCollection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Reverse {
     public static void main(String[] args) {
@@ -23,10 +24,14 @@ public class Reverse {
         }
 
         // reversing a list without in-built methods
-        display(list);
-        reverseList(list);
-        display(list);
+        // display(list);
+        // reverseList(list);
+        // display(list);
 
+        // reversing a list with in-built method
+        display(list);
+        Collections.reverse(list);
+        display(list);
     }
 
     public static <T> void display(ArrayList<T> list) {

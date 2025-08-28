@@ -119,11 +119,18 @@ public class ArrayListPractice {
     // System.out.println();
     // }
 
-    public static void display(ArrayList<Integer> list) {
-        for (int value : list) {
-            System.out.println(value);
+    // public static void display(ArrayList<Integer> list) {
+    // for (int value : list) {
+    // System.out.println(value);
+    // }
+    // System.out.println();
+    // }
+
+    // generic function
+    public static <T> void display(ArrayList<T> list) {
+        for (T item : list) {
+            System.out.println(item);
         }
         System.out.println();
     }
-
 }

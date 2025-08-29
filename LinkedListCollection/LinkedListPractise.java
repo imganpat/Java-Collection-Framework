@@ -4,10 +4,10 @@ Basic Practice Tasks with LinkedList
         ✅ Store names of 5 cities.
         ✅ Print the LinkedList.
 
-    Access & Modify
-        Print the first and last element.
-        Change the element at index 2.
-        Print the updated LinkedList.
+    ✅ Access & Modify
+        ✅ Print the first and last element.
+        ✅ Change the element at index 2.
+        ✅ Print the updated LinkedList.
 
     Add & Remove Elements
         Add a new city at the beginning.
@@ -42,6 +42,17 @@ public class LinkedListPractise {
         cities.add("Ahmedabad");
 
         // displaying the list
+        display(cities);
+
+        // accessing the first element
+        System.out.println("First city: " + cities.getFirst());
+
+        // accessing the last element
+        System.out.println("Last city: " + cities.getLast());
+        System.out.println();
+
+        // modifing the element at index 2
+        cities.set(2, "Navi Mumbai");
         display(cities);
     }
 

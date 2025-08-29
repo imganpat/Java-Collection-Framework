@@ -9,11 +9,11 @@ Basic Practice Tasks with LinkedList
         ✅ Change the element at index 2.
         ✅ Print the updated LinkedList.
 
-    Add & Remove Elements
-        Add a new city at the beginning.
-        Add a new city at the end.
-        Remove the first and last elements.
-        Print the LinkedList after each change.
+    ✅ Add & Remove Elements
+        ✅ Add a new city at the beginning.
+        ✅ Add a new city at the end.
+        ✅ Remove the first and last elements.
+        ✅ Print the LinkedList after each change.
 
     Loop through LinkedList
         Print all elements using a normal for loop.
@@ -44,16 +44,30 @@ public class LinkedListPractise {
         // displaying the list
         display(cities);
 
-        // accessing the first element
-        System.out.println("First city: " + cities.getFirst());
+        // // accessing the first element
+        // System.out.println("First city: " + cities.getFirst());
 
-        // accessing the last element
-        System.out.println("Last city: " + cities.getLast());
-        System.out.println();
+        // // accessing the last element
+        // System.out.println("Last city: " + cities.getLast());
+        // System.out.println();
 
-        // modifing the element at index 2
-        cities.set(2, "Navi Mumbai");
+        // // modifing the element at index 2
+        // cities.set(2, "Navi Mumbai");
+        // display(cities);
+
+        // adding a new element at the beginning
+        cities.addFirst("Pali");
         display(cities);
+
+        // adding a new city at the end.
+        cities.addLast("Surat");
+        display(cities);
+
+        // Removing the first and last elements.
+        cities.removeFirst();
+        cities.removeLast();
+        display(cities);
+
     }
 
     public static void display(LinkedList<String> list) {

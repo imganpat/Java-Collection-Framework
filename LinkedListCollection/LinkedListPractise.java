@@ -15,10 +15,10 @@ Basic Practice Tasks with LinkedList
         ✅ Remove the first and last elements.
         ✅ Print the LinkedList after each change.
 
-    Loop through LinkedList
-        Print all elements using a normal for loop.
-        Then print them again using a for-each loop.
-        Then print using an Iterator.
+    ✅ Loop through LinkedList
+        ✅ Print all elements using a normal for loop.
+        ✅ Then print them again using a for-each loop.
+        ✅ Then print using an Iterator.
 
     Check Size & Search
         Print the size of the LinkedList.
@@ -27,6 +27,7 @@ Basic Practice Tasks with LinkedList
 
 package LinkedListCollection;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListPractise {
@@ -55,24 +56,38 @@ public class LinkedListPractise {
         // cities.set(2, "Navi Mumbai");
         // display(cities);
 
-        // adding a new element at the beginning
-        cities.addFirst("Pali");
-        display(cities);
+        // // adding a new element at the beginning
+        // cities.addFirst("Pali");
+        // display(cities);
 
-        // adding a new city at the end.
-        cities.addLast("Surat");
-        display(cities);
+        // // adding a new city at the end.
+        // cities.addLast("Surat");
+        // display(cities);
 
-        // Removing the first and last elements.
-        cities.removeFirst();
-        cities.removeLast();
-        display(cities);
+        // // Removing the first and last elements.
+        // cities.removeFirst();
+        // cities.removeLast();
+        // display(cities);
 
     }
 
     public static void display(LinkedList<String> list) {
-        for (String element : list) {
-            System.out.println(element);
+        // for (String element : list) {
+        // System.out.println(element);
+        // }
+        // System.out.println();
+
+        // printing list element using normal for loop
+        // int listSize = list.size();
+        // for (int i = 0; i < listSize; i++) {
+        // System.out.println(list.get(i));
+        // }
+        // System.out.println();
+
+        // printing list elements using iterator
+        Iterator<String> i = list.iterator();
+        while (i.hasNext()) {
+            System.out.println(i.next());
         }
         System.out.println();
     }

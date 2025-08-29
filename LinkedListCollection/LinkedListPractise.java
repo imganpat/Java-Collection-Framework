@@ -20,9 +20,9 @@ Basic Practice Tasks with LinkedList
         ✅ Then print them again using a for-each loop.
         ✅ Then print using an Iterator.
 
-    Check Size & Search
-        Print the size of the LinkedList.
-        Check if a particular city exists in it.
+    ✅ Check Size & Search
+        ✅ Print the size of the LinkedList.
+        ✅ Check if a particular city exists in it.
  */
 
 package LinkedListCollection;
@@ -68,6 +68,13 @@ public class LinkedListPractise {
         // cities.removeFirst();
         // cities.removeLast();
         // display(cities);
+
+        // printing the size of the list
+        System.out.println("The size of list is : " + cities.size());
+
+        // checking if a particular city exists in the list or not
+        System.out.println("Is Pune in the list: " + cities.contains("Pune"));
+        System.out.println("Is Chennai in the list: " + cities.contains("Chennai"));
 
     }
 

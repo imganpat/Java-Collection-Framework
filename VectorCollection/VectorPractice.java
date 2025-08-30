@@ -6,9 +6,9 @@ Basic Practice with Vector
     ✅ Access Elements
         ✅ Print the first and last element of a Vector<Integer>.
         ✅ Change the element at index 2.
-    Insert & Remove
-        Add an element at the beginning and end of the vector.
-        Remove the element at index 3.
+    ✅ Insert & Remove
+        ✅ Add an element at the beginning and end of the vector.
+        ✅ Remove the element at index 3.
     Check Existence
         Write a program to check if a given element exists in a Vector<String>.
         Print "Found" or "Not Found".
@@ -33,14 +33,25 @@ public class VectorPractice {
         // printing the vector
         System.out.println(vector);
 
-        // printing the first element
-        System.out.println("First element: " + vector.getFirst());
+        // // printing the first element
+        // System.out.println("First element: " + vector.getFirst());
 
-        // printing the last element
-        System.out.println("Last element: " + vector.getLast());
+        // // printing the last element
+        // System.out.println("Last element: " + vector.getLast());
 
-        // changing the element present at index 2
-        vector.set(2, 100);
+        // // changing the element present at index 2
+        // vector.set(2, 100);
+        // System.out.println(vector);
+
+        // adding element at the beginning of the vector
+        vector.add(0, 100);
+
+        // adding element at the end of the vector
+        vector.add(200);
+
+        // removing the element presebt at index 3
+        vector.remove(3);
+
         System.out.println(vector);
     }
 }
